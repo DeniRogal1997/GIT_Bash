@@ -34,11 +34,11 @@ ctrl + c
 12) Выйти из папки на уровень выше
 cd .. 
 —
-13) переместить любые 2 файла, которые вы создали, в любую другую папку. #перейдем в папку, где хранятся необходимые файлы для перемещения, далее используем эту команду: 
-mv file_1.txt file_2.txt ../folder_2
+13) переместить любые 2 файла: 
+mv folder_{1,2} folder_3
 
-14) скопировать любые 2 файла, которые вы создали, в любую другую папку.#перейдем в папку, где хранятся необходимые файлы для перемещения, далее используем эту команду: 
-cp file_4.json file_5.json ../folder_2
+14) скопировать любые 2 файла: 
+cp -r folder_3/{js_2.json,text_3.txt} folder_3/folder_1
 
 15) Найти файл по имени 
 find . -name "text_1.txt" (ВАЖНО: данный файл найдется, если мы находимся в текущей директории, где есть этот файл или этой файл будет в директориях ниже).
@@ -80,7 +80,7 @@ http://162.55.220.72:5005/terminal-hw-request
 cd folder 
 mkdir folder_1 folder_2 folder_3 
 cd folder_1
-touch filet_1.txt file_2.txt file_3.txt file_4.json file_5.json
+touch file_1.txt file_2.txt file_3.txt file_4.json file_5.json
 mkdir folder_1 folder_2 folder_3
 ls -la
 mv file_1.txt file_2.txt ../folder_2
